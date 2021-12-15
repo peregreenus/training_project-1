@@ -243,7 +243,7 @@ body {
 }
 
 .services {
-    padding: 50px 0 30px;
+    padding: 50px 0 35px;
 }
 
 .services__top {
@@ -340,4 +340,37 @@ body {
     border-bottom: 1px solid #050505;
     line-height: 0.8;
     margin-right: 95px;
+}
+
+.about {
+    background-image: url(../img/about-bg.jpg);
+    min-height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px 0px 45px;
+}
+
+.about__inner {
+    max-width: 545px;
+}
+
+.about__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #fff;
+    padding: 10px 0 25px;
+}
+
+.about__text {
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #d3d2d2;
+    padding-bottom: 30px;
+}
+
+.about__btn.default-btn::after {
+    color: #303030;
 }
