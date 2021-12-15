@@ -126,3 +126,117 @@ body {
 .menu li + li {
     padding-left: 10px;
 }
+
+.slider {
+    background-image: url(../img/slider-bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+.slider__item-content {
+    padding-top: 110px;
+    min-width: 665px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slider__title {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin-bottom: 22px;
+}
+
+.slider__text {
+    color: #d3d2d2;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+
+.slider__btn {
+    display: inline-block;
+    color: #ffffff;
+    line-height: 24px;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #ffc222;
+    padding: 8px 20px 8px 20px;
+    border-right-width: 20px;
+    position: relative;
+}
+
+.default-btn {
+    display: inline-block;
+    color: #ffffff;
+    line-height: 24px;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #ffc222;
+    padding: 8px 20px 8px 20px;
+    border-right-width: 20px;
+}
+
+.default-btn::after {
+    content: "\f105";
+    font-family: 'icomoon';
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    transform: translateY(-50%);
+}
+
+.slider__inner {
+    position: relative;
+}
+
+.slick-btn {
+    position: absolute;
+    top: 70%;
+    z-index: 3;
+    background-color: #ffc222;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+}
+
+.slick-btn.slick-disabled {
+    background-color: transparent;
+    cursor: default;
+}
+
+.slick-btn::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-next::before {
+    content: "\f105";
+    font-family: 'icomoon';
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-prev::before {
+    content: "\f104";
+    font-family: 'icomoon';
+}
