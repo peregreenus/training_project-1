@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link href="css/jquery.formstyler.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -97,7 +98,7 @@
         <div class="container">
             <div class="services__top">
                 <div class="services__title-box">
-                    <div class="services-title">
+                    <div class="services__title">
                         Наши Услуги
                     </div>
                     <div class="services__text">
@@ -175,8 +176,53 @@
             </div>
         </div>
     </section>
+    <section class="form">
+        <div class="container">
+            <div class="form__inner">
+                <div class="form__content">
+                    <div class="form__title-box">
+                        <div class="form__title">
+                            Получить Консультацию
+                        </div>
+                        <div class="form__text">
+                            Комплексный подход к вашему вопросу, своевременная правовая помощь,
+                            представление интересов во всех судебных инстанциях.
+                        </div>
+                    </div>
+                    <div class="form__box">
+                        <form action="">
+                            <div class="form__box-inner">
+                                <div class="form__box-left">
+                                    <label for="email">E-mail</label>
+                                    <input type="text" id="email">
+                                    <label for="phone">Контактный телефон</label>
+                                    <input type="text" id="phone">
+                                    <label for="name">ФИО</label>
+                                    <input type="text" id="name">
+                                    <label for="question">Тема вопроса</label>
+                                    <select name="question" id="question">
+                                        <option value="">-------</option>
+                                        <option value="">-------</option>
+                                        <option value="">-------</option>
+                                        <option value="">-------</option>
+                                    </select>
+
+                                </div>
+                                <div class="form__box-right">
+                                    <label for="message">Сообщение</label>
+                                    <textarea name="message" id="message" cols="30" rows="12"></textarea>
+                                    <button class="default-btn" type="submit">Получить консультацию</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

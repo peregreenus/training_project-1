@@ -34,6 +34,7 @@ body {
 .header {
     font-family: 'Roboto Regular', sans-serif;
 }
+
 .header__top {
     background-color: #303030;
 }
@@ -107,6 +108,7 @@ body {
     justify-content: space-between;
     font-size: 16px;
 }
+
 .menu li {
     display: inline-block;
 }
@@ -123,7 +125,7 @@ body {
     border: 1px solid #ffc222;
 }
 
-.menu li + li {
+.menu li+li {
     padding-left: 10px;
 }
 
@@ -252,13 +254,15 @@ body {
     margin-bottom: 60px;
 }
 
-.services__title-box {
+.services__title-box,
+.form__title-box {
     max-width: 520px;
     padding-left: 140px;
     position: relative;
 }
 
-.services__title-box::before {
+.services__title-box::before,
+.form__title-box::before {
     content: "";
     position: absolute;
     width: 100px;
@@ -268,7 +272,8 @@ body {
     top: 10px;
 }
 
-.services-title {
+.services__title,
+.form__title {
     font-size: 24px;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
@@ -277,7 +282,8 @@ body {
     margin-bottom: 10px;
 }
 
-.services__text {
+.services__text,
+.form__text {
     letter-spacing: 0.1px;
 }
 
@@ -372,5 +378,153 @@ body {
 }
 
 .about__btn.default-btn::after {
+    color: #303030;
+}
+
+.form {
+    padding-top: 30px;
+}
+
+.form__inner {
+    background-image: url(../img/form-bg.png);
+    min-height: 460px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding-bottom: 40px;
+}
+
+.form__box {
+    max-width: 850px;
+    padding-top: 45px;
+}
+
+.form__box-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__box-inner label,
+.form__box-inner input,
+.form__box-inner textarea {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    width: 100%;
+    outline: none;
+}
+
+.form__box-inner label {
+    line-height: 36px;
+    color: #282828;
+}
+
+.form__box-inner input {
+    margin-bottom: 5px;
+    border: 1px solid #e6e6e6;
+    height: 42px;
+    padding: 0px 10px;
+}
+
+.form__box-inner select {
+    outline: none;
+
+}
+
+.form__box-inner .jq-selectbox.jqselect {
+    display: block;
+    width: 100%;
+}
+
+.form__box-inner .jq-selectbox__select {
+    border: 1px solid #e6e6e6;
+    height: 42px;
+    padding-left: 17px;
+    padding-top: 10px;
+}
+
+.form__box-inner .jq-selectbox__trigger-arrow::before {
+    content: "\f105";
+    font-family: 'icomoon';
+    position: absolute;
+    right: 17px;
+    top: 10px;
+    transform: rotate(90deg);
+}
+
+.form__box-inner .jq-selectbox__dropdown {
+    width: 100%;
+    margin: 2px 0 0;
+    padding: 0;
+    border: 1px solid #e6e6e6;
+    background: #FFF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+
+.form__box-inner .jq-selectbox li {
+    min-height: 18px;
+    padding: 5px 17px 6px;
+    color: #231F20;
+}
+
+.jq-selectbox li.selected {
+    background-color: #A3ABB1;
+    color: #FFF;
+}
+
+.jq-selectbox li:hover {
+    background-color: #08C;
+    color: #FFF;
+}
+
+.jq-selectbox li.disabled {
+    color: #AAA;
+}
+
+.jq-selectbox li.disabled:hover {
+    background: none;
+}
+
+.jq-selectbox li.optgroup {
+    font-weight: bold;
+}
+
+.jq-selectbox li.optgroup:hover {
+    background: none;
+    color: #231F20;
+    cursor: default;
+}
+
+.jq-selectbox li.option {
+    padding-left: 25px;
+}
+
+.form__box-inner textarea {
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+    height: 208px;
+    margin-bottom: 41px;
+    resize: none;
+}
+
+.form__box-left {
+    max-width: 260px;
+    width: 100%;
+}
+
+.form__box-right {
+    max-width: 555px;
+    width: 100%;
+}
+
+button.default-btn {
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    background-color: transparent;
+    color: #303030;
+    cursor: pointer;
+    float: right;
+    padding: 8px 28px;
+}
+
+button.default-btn::after {
     color: #303030;
 }
