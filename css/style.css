@@ -528,3 +528,62 @@ button.default-btn {
 button.default-btn::after {
     color: #303030;
 }
+
+.advantages {
+    padding: 55px 0px 40px;
+    min-height: 285px;
+    background-image: url(../img/advantages-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.advantages__inner {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.advantages__item {
+    max-width: 360px;
+    padding: 0px 20px;
+}
+
+.advantages__title {
+    font-size: 18px;
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 24px;
+    font-weight: 500;
+    padding: 60px 0px 15px;
+    position: relative;
+}
+
+.advantages__title::before,
+.advantages__title::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.advantages__title::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffc222;
+    top: 0;
+}
+
+.advantages__title::after {
+    content: "\f00c";
+    font-family: 'icomoon';
+    font-size: 14px;
+    top: 10px;
+}
+
+.advantages__text {
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #d3d2d2;
+}
