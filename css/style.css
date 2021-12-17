@@ -39,7 +39,8 @@ body {
     background-color: #303030;
 }
 
-.header__btn {
+.header__btn,
+.footer__btn {
     float: right;
     line-height: 36px;
     font-family: 'Roboto', sans-serif;
@@ -50,7 +51,8 @@ body {
     position: relative;
 }
 
-.header__btn::before {
+.header__btn::before,
+.footer__btn::before {
     content: "\f0b1";
     font-family: 'icomoon';
     position: absolute;
@@ -67,18 +69,23 @@ body {
 }
 
 .header__phone,
-.header__email {
+.header__email,
+.footer__phone,
+.footer__email {
     color: #acabac;
     letter-spacing: 0.25px;
     line-height: 45px;
 }
 
-.header__phone {
+.header__phone,
+.footer__phone,
+.footer__address {
     padding: 0 30px 0 20px;
     position: relative;
 }
 
-.header__phone::before {
+.header__phone::before,
+.footer__phone::before {
     content: "\f095";
     font-family: 'icomoon';
     position: absolute;
@@ -86,12 +93,14 @@ body {
     color: #ffc222;
 }
 
-.header__email {
+.header__email,
+.footer__email {
     padding-left: 24px;
     position: relative;
 }
 
-.header__email::before {
+.header__email::before,
+.footer__email::before {
     content: "\f003";
     font-family: 'icomoon';
     position: absolute;
@@ -704,4 +713,81 @@ button.default-btn::after {
 .news__blog-text {
     letter-spacing: 0.1px;
     color: #5e5e5e;
+}
+
+.footer__content {
+    font-family: 'Roboto', 'sans-serif';
+    color: #d3d2d2;
+    background-color: #595959;
+    padding: 20px 0px 30px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__info {
+    max-width: 360px;
+}
+
+.footer__title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.footer__text {
+    margin-bottom: 20px;
+}
+
+.footer__btn {
+    float: none;
+    margin-bottom: 20px;
+}
+
+.footer__list a {
+    line-height: 36px;
+    letter-spacing: 0.25px;
+    color: #fff;
+}
+
+.footer__phone {}
+
+.footer__email {
+    padding-left: 20px;
+}
+
+.footer__address::before {
+    content: "\f041";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    color: #ffc222;
+}
+
+.footer__map {
+    padding-top: 10px;
+    max-width: 630px;
+    height: 250px;
+    width: 100%;
+}
+
+.footer__map iframe {
+    max-width: 630px;
+    height: 250px;
+    width: 100%;
+}
+
+.footer__copy {
+    font-family: 'Roboto', 'sans-serif';
+    text-align: center;
+    background-color: #303030;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    padding: 9px 0px;
 }
